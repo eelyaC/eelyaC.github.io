@@ -27,21 +27,32 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    // toggleGrid();
+    //toggleGrid();
 
 
     // TODO 2 - Create Platforms
+   createPlatform(0,400,200,20);
+   createPlatform(300,300,120,20);
+   createPlatform(500,450,100,20);
+   createPlatform(700,350,120,20);
+   createPlatform(900,250,100,20);
+    
+    
 
 
 
 
     // TODO 3 - Create Collectables
-
+   createCollectale("gold_coin", 290, 370, 0.5, 0.5);
+   createCollectable("health_potion", 490, 300, 0.5, 0.5);
+   createCollectable("speed_boost", 890, 160, 0.5, 0.5);
 
 
     
     // TODO 4 - Create Cannons
-
+    createCannon("top", 100, 360)
+    createCannon("left", 287, 1000)
+    createCannon("bottom", 660, 2370)
 
     
     
