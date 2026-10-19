@@ -61,7 +61,7 @@
 
         // changes the text displayed on the Box
         function changeBoxText(newText) {
-          box.text(newText);
+          box.text(nexText/);
         }
 
         //////////////////////////////////////////////////////////////////
@@ -70,7 +70,7 @@
 
         // TODO 2 - Variable declarations
 
-
+       var positionX = 0;
 
 
 
@@ -81,10 +81,20 @@
          */
         function update() {
 
-        
+        positionX += speed;
+        moveBoxTo(position)
+       
+        if (positionX > boardWidth) {
+          speed *= -1;
+           } else if (positionX <0) {
 
-          
-        }
+           }
+       positionX += speed;
+        moveBoxTo(positionX);
+       
+          }
+
+
 
         /**
          * This Function will be called each time the box is clicked.
@@ -94,9 +104,11 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
-
-
-
+        
+       positionX = 0;
+       points++;
+       speed += 3;
+       changeBoxText(points);
 
         }
 

@@ -33,7 +33,7 @@ $(function () {
     // TODO 2 - Create Platforms
    createPlatform(0,400,200,20);
    createPlatform(300,300,120,20);
-   createPlatform(500,450,100,20);
+   createPlatform(500,280,100,20);
    createPlatform(700,350,120,20);
    createPlatform(900,250,100,20);
     
@@ -43,9 +43,9 @@ $(function () {
 
 
     // TODO 3 - Create Collectables
-   createCollectale("gold_coin", 290, 370, 0.5, 0.5);
-   createCollectable("health_potion", 490, 300, 0.5, 0.5);
-   createCollectable("speed_boost", 890, 160, 0.5, 0.5);
+   createCollectable("diamond", 290, 280, 0.5, 0.5);
+   createCollectable("grace", 490, 260, 0.5, 0.5);
+   createCollectable("max", 890, 230, 0.5, 0.5);
 
 
     
